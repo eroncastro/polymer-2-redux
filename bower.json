@@ -1,0 +1,20 @@
+{
+  "name": "polymer-redux",
+  "description": "Learning how to user Polymer with redux",
+  "main": "index.js",
+  "authors": [
+    "Eron <eroncastro@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eroncastro/polymer-2-redux",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#2.0.0-rc.3"
+  }
+}
