@@ -1,0 +1,30 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="redux-store.html">
+
+<dom-module id="friend-list">
+  <template>
+    <ul>
+      <template is="dom-repeat" items="[[friends]]" as="friend">
+        <li>[[friend]]</li>
+      </template>
+    </ul>
+  </template>
+
+  <script>
+    class FriendList extends ReduxMixin(Polymer.Element) {
+
+      static get is() { return 'friend-list'; }
+
+      static get properties() {
+        return {
+          friends: {
+            type: Array,
+            statePath: 'friends'
+          }
+        }
+      }
+    }
+
+    customElements.define(FriendList.is, FriendList);
+  </script>
+</dom-module>
